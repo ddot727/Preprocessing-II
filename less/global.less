@@ -39,3 +39,37 @@ img {
   height: auto;
 }
 
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media @mobile {
+    width: 100%;
+
+    header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+    }
+
+    header nav{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    header nav a{
+      display: flex;
+      margin: 0 auto;
+    }
+
+  }
+
+}
+
+.btn {
+  font-size:16px;
+  .custom-btn(200px, 40px, @button-bg, white);
+}
