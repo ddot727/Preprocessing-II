@@ -5,7 +5,15 @@ header nav {
     justify-content: space-around;
     align-content: center;
     margin-left: 20rem;
-    width: 45%
+    width: 45%;
+
+    @media @mobile {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: 100%;
+    }
+
   }
 
   header nav a{

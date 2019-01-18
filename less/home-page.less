@@ -5,6 +5,13 @@
     .custom-layout(space-between, center);
     width: 100%;
     border-bottom: 2px dashed silver;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
   }
 
   .welcome h2{
@@ -27,11 +34,18 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -52,12 +66,21 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile {
+      width: 100%;
+      display:flex;
+      flex-flow: column-reverse;
+    }
+
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      width: 100%;
+    }
     img {
       border-radius: 10px;
     }
@@ -72,9 +95,145 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      @media @mobile {
+        width: 100%;
+      }
+
+      .btn {
+        @media @mobile {
+          width: 100%;
+        }
+      }
+      
     }
+
+    @media @mobile {
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+    }
+
   }
+
+
+//    @media @mobile {
+//     width: 100%;
+
+//     header{
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center; 
+//     }
+
+//     header h1{
+//       font-size: 30px;
+//       padding-bottom: 2rem;
+//     }
+
+//     header nav{
+//       display: flex;
+//       justify-content: center;
+//       margin: 0 auto;
+//       width: 100%;
+//     }
+
+//     header nav a{
+//       display: flex;
+//       margin: 0 auto;
+//     }
+
+//     .content-section{
+//       flex-flow: column;
+//       justify-content: space-around;
+//       width: 400px;
+
+//       @media @mobile{
+//         width: 100%;
+//       }
+
+//     }
+
+//     .content-section .inverse-content{
+//       flex-flow: column-reverse;
+//       justify-content: center;
+//       width: 100%;
+//     }
+
+//     // .text-content{
+      
+//     //   width: 800px;
+//     //   // padding-right: 0;
+//     // }
+
+//     .content-pick{
+//       width: 100%;
+//       display: flex;
+//       flex-direction: column;
+//     }
+
+//     .destination{
+//       width: 75%;
+//       margin: 0 auto 30px;
+//     }
+
+//   }
 
   
   
 }// home
+
+// // @media @mobile {
+// //   width: 100%;
+
+// //   header{
+// //     display: flex;
+// //     flex-direction: column;
+// //     justify-content: center; 
+// //   }
+
+// //   header h1{
+// //     font-size: 30px;
+// //     padding-bottom: 2rem;
+// //   }
+
+// //   header nav{
+// //     display: flex;
+// //     justify-content: center;
+// //     margin: 0 auto;
+// //     width: 100%;
+// //   }
+
+// //   header nav a{
+// //     display: flex;
+// //     margin: 0 auto;
+// //   }
+
+// //   .content-section{
+// //     flex-flow: column;
+// //     justify-content: space-around;
+// //     width: 400px;
+// //   }
+
+// //   .content-section .inverse-content{
+// //     flex-flow: column-reverse;
+// //     justify-content: center;
+// //     width: 100%;
+// //   }
+
+// //   .text-content{
+// //     width:100%;
+// //   }
+
+// //   .content-pick{
+// //     width: 100%
+// //     display: flex;
+// //     flex-direction: column;
+// //   }
+
+// //   .destination{
+// //     width: 75%;
+// //     margin: 0 auto 30px;
+// //   }
+
+// // }
