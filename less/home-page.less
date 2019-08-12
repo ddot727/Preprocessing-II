@@ -1,5 +1,40 @@
 .home {
 
+  header {
+    display: flex;
+    .custom-layout(space-between, center);
+    width: 100%;
+    border-bottom: 2px dashed silver;
+
+    @media @tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      @media @tablet{
+        padding-bottom: 10px;
+      }
+    }
+
+  }
+
+  .welcome h2{
+    padding-top: 20px;
+  }
+
+  .welcome p{
+    padding-bottom: 20px;
+    border-bottom: 2px dashed silver;
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -11,14 +46,26 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width:100%;
+        }
+        
       }
     }
   }
@@ -35,13 +82,32 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile{
+        width: 100%;
+      }
+      
     }
+
+    @media @mobile {
+      width: 100%;
+      display:flex;
+      flex-flow: column-reverse;
+    }
+
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @tablet {
+      width: 100%;
+    }
+
+    @media @mobile {
+      width: 100%;
+    }
     img {
       border-radius: 10px;
     }
@@ -56,6 +122,34 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 100%;
+      }
+      
+      @media @mobile {
+        width: 100%;
+      }
+
+      .btn {
+        @media @mobile {
+          width: 100%;
+        }
+      }
+      
     }
+
+    @media @tablet {
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    @media @mobile {
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+    }
+
   }
-}// home
+}
